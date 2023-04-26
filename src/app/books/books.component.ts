@@ -16,11 +16,8 @@ export class BooksComponent {
   src2: string =
     'https://m.media-amazon.com/images/I/41Suou3DGEL._SX398_BO1,204,203,200_.jpg';
 
-  isDisabled: boolean = false;
-
-  handleClick() {
-    this.isDisabled = true;
+  isShowing: boolean = true;
+  toggleBooks() {
+    this.isShowing = !this.isShowing;
   }
-
-  myName: string = '';
 }

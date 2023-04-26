@@ -1,17 +1,8 @@
 <h2>Programming Books List</h2>
 
-<button
-  (click)="handleClick()"
-  (mouseover)="handleClick()"
-  [disabled]="isDisabled"
->
-  Show Books
-</button>
+<button (click)="toggleBooks()">Toggle Books</button>
 
-<input type="text" [(ngModel)]="myName" />
-<p>{{ myName }}</p>
-
-<ul>
+<ul *ngIf="isShowing">
   <li>
     <img [src]="src" [alt]="name" width="100" />
     {{ name }} by {{ author }}
