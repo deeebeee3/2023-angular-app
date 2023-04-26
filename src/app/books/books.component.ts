@@ -23,7 +23,4 @@ export class BooksComponent {
   }
 
   myName: string = '';
-  handleInput(event: any) {
-    this.myName = event.target.value;
-  }
 }
