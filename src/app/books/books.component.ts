@@ -21,4 +21,9 @@ export class BooksComponent {
   handleClick() {
     this.isDisabled = true;
   }
+
+  myName: string = '';
+  handleInput(event: any) {
+    this.myName = event.target.value;
+  }
 }
