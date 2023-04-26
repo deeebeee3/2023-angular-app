@@ -37,3 +37,11 @@ Component automatically imported into AppModule:
 declarations: [AppComponent, BooksComponent],
 
 ---
+
+## Property Binding
+
+Interpolation not recommended everywhere.
+
+Use Property Binding whenever possible for the properties or attributes for any html.
+
+---

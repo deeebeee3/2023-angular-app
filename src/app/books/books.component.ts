@@ -15,4 +15,6 @@ export class BooksComponent {
   author2: string = 'David Thomas';
   src2: string =
     'https://m.media-amazon.com/images/I/41Suou3DGEL._SX398_BO1,204,203,200_.jpg';
+
+  isDisabled: boolean = false;
 }
