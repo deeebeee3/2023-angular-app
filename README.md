@@ -51,3 +51,26 @@ Use Property Binding whenever possible for the properties or attributes for any 
 Look at the Angular api
 
 https://angular.io/api/core/PipeTransform
+
+---
+
+## Sharing data between child and parent directives and components
+
+Create new component called book (we already have the books component)
+
+`ng generate component book`
+
+It will be automatically registered in the App Module:
+
+```js
+declarations: [AppComponent, BooksComponent, BookComponent],
+```
+
+https://angular.io/guide/inputs-outputs
+
+Similar to passing props to Child component from Parent component like in React.
+
+We need to use the @Input decorator on the child component `book` variable
+to mark it as a incoming / accepting a prop.
+
+---

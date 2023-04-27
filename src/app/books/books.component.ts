@@ -1,11 +1,5 @@
 import { Component } from '@angular/core';
-
-interface Book {
-  name: string;
-  author: string;
-  image: string;
-  amount: number;
-}
+import { Book } from '../types/Book';
 
 @Component({
   selector: 'app-books',
@@ -27,6 +21,20 @@ export class BooksComponent {
       image:
         'https://m.media-amazon.com/images/I/41Suou3DGEL._SX398_BO1,204,203,200_.jpg',
       amount: 800,
+    },
+    {
+      name: 'Python Programming for Beginners',
+      author: 'Philip Robbins',
+      image:
+        'https://m.media-amazon.com/images/I/51KVyDP3-uL._SX398_BO1,204,203,200_.jpg',
+      amount: 650,
+    },
+    {
+      name: 'How to Build Android Apps with Kotlin',
+      author: 'Alex Forrester',
+      image:
+        'https://m.media-amazon.com/images/I/51CpyvyUJKL._SX404_BO1,204,203,200_.jpg',
+      amount: 872,
     },
   ];
 
