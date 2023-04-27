@@ -80,3 +80,15 @@ to mark it as a incoming / accepting a prop.
 ## Passing data from Child to Parent
 
 https://angular.io/guide/inputs-outputs#sending-data-to-a-parent-component
+
+We need to use the `@Output` decorator to define our event emitter...
+
+```js
+@Output() bookEmitter = new EventEmitter<Book>();
+...
+this.bookEmitter.emit(this.book);
+```
+
+## Listen for the emitted event
+
+---
