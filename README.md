@@ -56,6 +56,8 @@ https://angular.io/api/core/PipeTransform
 
 ## Sharing data between child and parent directives and components
 
+### Passing data / props from Parent to Child...
+
 Create new component called book (we already have the books component)
 
 `ng generate component book`
@@ -70,7 +72,11 @@ https://angular.io/guide/inputs-outputs
 
 Similar to passing props to Child component from Parent component like in React.
 
-We need to use the @Input decorator on the child component `book` variable
+We need to use the `@Input` decorator on the child component `book` variable
 to mark it as a incoming / accepting a prop.
 
 ---
+
+## Passing data from Child to Parent
+
+https://angular.io/guide/inputs-outputs#sending-data-to-a-parent-component

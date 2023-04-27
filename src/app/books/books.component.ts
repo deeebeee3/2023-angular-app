@@ -39,4 +39,6 @@ export class BooksComponent {
   ];
 
   isShowing: boolean = true;
+
+  cart: Book[] = [];
 }
