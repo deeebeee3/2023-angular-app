@@ -92,3 +92,14 @@ this.bookEmitter.emit(this.book);
 ## Listen for the emitted event
 
 ---
+
+## LifeCycle Hooks
+
+**ngOnChanges()**
+**ngOnInit()**
+ngDoCheck()
+ngAfterContentInit()
+ngAfterContentChecked()
+ngAfterViewInit()
+ngAfterViewChecked()
+**ngOnDestroy()**

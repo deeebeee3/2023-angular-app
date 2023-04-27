@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Book } from '../types/Book';
 
 @Component({
@@ -6,7 +6,7 @@ import { Book } from '../types/Book';
   templateUrl: './books.component.html',
   styleUrls: ['./books.component.css'],
 })
-export class BooksComponent {
+export class BooksComponent implements OnInit {
   books: Book[] = [
     {
       name: 'Clean Code',
@@ -39,8 +39,17 @@ export class BooksComponent {
   ];
 
   isShowing: boolean = true;
-
   cart: Book[] = [];
+
+  /* obviously this called when class is initialized... */
+  constructor() {
+    console.log({ constructor: 'Books Constructor' });
+  }
+
+  /* when component is ready to be mounted on the DOM */
+  ngOnInit(): void {
+    console.log({ onInit: 'Books Component' });
+  }
 
   addToCart(event: Book) {
     console.log(event);
