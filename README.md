@@ -45,3 +45,9 @@ Interpolation not recommended everywhere.
 Use Property Binding whenever possible for the properties or attributes for any html.
 
 ---
+
+## Pipes
+
+Look at the Angular api
+
+https://angular.io/api/core/PipeTransform
