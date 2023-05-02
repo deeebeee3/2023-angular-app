@@ -103,3 +103,9 @@ ngAfterContentChecked()
 ngAfterViewInit()
 ngAfterViewChecked()
 **ngOnDestroy()**
+
+---
+
+## Services
+
+`ng generate service books/books`
