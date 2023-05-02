@@ -137,3 +137,9 @@ We will create a Books module and import the service there...
 `ng generate service services/cart`
 
 `ng generate component cart`
+
+---
+
+## Angular Routing
+
+https://angular.io/guide/router
