@@ -158,3 +158,9 @@ RESTART THE APP FOR THE ABOVE TO APPLY
 so it can build and include all the tailwind css stuff
 
 ---
+
+## AUTHENTICATION SECTION
+
+`ng generate module auth`
+`ng generate component auth/login`
+`ng generate component auth/register`
