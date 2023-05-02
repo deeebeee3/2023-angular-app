@@ -135,3 +135,5 @@ We will create a Books module and import the service there...
 ## State Management (by Service)
 
 `ng generate service services/cart`
+
+`ng generate component cart`
