@@ -15,15 +15,10 @@ export class BooksComponent implements OnInit {
 
   books: Book[] = [];
   isShowing: boolean = true;
-  cart: Book[] = [];
 
   /* when component is ready to be mounted on the DOM */
   ngOnInit(): void {
     console.log({ onInit: 'Books Component' });
     this.books = this.booksService.getBooks();
-  }
-
-  addToCart(event: Book) {
-    console.log(event);
   }
 }
