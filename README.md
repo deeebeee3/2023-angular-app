@@ -109,3 +109,25 @@ ngAfterViewChecked()
 ## Services
 
 `ng generate service books/books`
+
+## Custom Module
+
+```js
+@Injectable({
+  providedIn: 'root',
+})
+```
+
+Here we were providing our service globally in the app...
+
+```js
+  providers: [BooksService],
+```
+
+Doing the above in the app.module.ts is the same thing (providing our service globally)...
+
+We will create a Books module and import the service there...
+
+`ng generate module books`
+
+---
