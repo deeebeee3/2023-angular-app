@@ -143,3 +143,18 @@ We will create a Books module and import the service there...
 ## Angular Routing
 
 https://angular.io/guide/router
+
+## Styling with TailWind
+
+https://tailwindcss.com/docs/guides/angular
+
+`npm install -D tailwindcss postcss autoprefixer`
+
+Create a tailwind config file:
+`npx tailwindcss init`
+
+RESTART THE APP FOR THE ABOVE TO APPLY
+
+so it can build and include all the tailwind css stuff
+
+---
