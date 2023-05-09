@@ -247,3 +247,13 @@ signOut(auth)
 ## Check for Auth in our Angular App
 
 `ng generate service auth/auth`
+
+## Route Guards
+
+`ng generate guard auth/auth`
+
+select "Can Activate" from options...
+
+https://angular.io/guide/router#preventing-unauthorized-access
+
+---
