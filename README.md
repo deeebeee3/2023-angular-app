@@ -226,3 +226,7 @@ https://firebase.google.com/docs/auth/web/start?hl=en&authuser=0
 https://console.firebase.google.com/project/angular-14-course-8f284/authentication/users
 
 ---
+
+## Check for Auth in our Angular App
+
+`ng generate service auth/auth`
