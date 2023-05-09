@@ -22,4 +22,8 @@ export class RegisterComponent {
   submit() {
     this.authService.register(this.form);
   }
+
+  isLoading() {
+    return this.authService.isLoading;
+  }
 }

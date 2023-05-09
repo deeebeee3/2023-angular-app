@@ -21,4 +21,8 @@ export class LoginComponent {
   submit() {
     this.authService.login(this.form);
   }
+
+  isLoading() {
+    return this.authService.isLoading;
+  }
 }
