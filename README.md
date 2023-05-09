@@ -168,3 +168,61 @@ so it can build and include all the tailwind css stuff
 ### Angular Forms
 
 https://angular.io/guide/forms-overview
+
+---
+
+## Firebase
+
+### The below instructions come from firebase when you create your app:
+
+`npm install firebase`
+
+```js
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+export const firebaseConfig = {
+  apiKey: "xxxx-xxxx-xxxxxx-xxxxx",
+  authDomain: "angular-14-course-xxxx.firebaseapp.com",
+  projectId: "angular-14-course-xxxx",
+  storageBucket: "angular-14-course-xxxx.appspot.com",
+  messagingSenderId: "xxxxxxxx",
+  appId: "1:xxxx:web:xxxxxxx",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+```
+
+### Install the CLI:
+
+`npm install -g firebase-tools`
+
+### Deploy to Firebase Hosting
+
+`firebase login`
+
+`firebase init`
+
+`firebase deploy`
+
+After deploying, view your app at angular-14-course-8f284.web.app
+
+### Authentication
+
+Enable email and password authentication in firebase
+
+then:
+
+https://firebase.google.com/docs?hl=en&authuser=0
+
+search for build > authentication:
+
+https://firebase.google.com/docs/auth/web/start?hl=en&authuser=0
+
+https://console.firebase.google.com/project/angular-14-course-8f284/authentication/users
+
+---
