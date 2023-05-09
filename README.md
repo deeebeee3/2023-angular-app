@@ -225,6 +225,23 @@ https://firebase.google.com/docs/auth/web/start?hl=en&authuser=0
 
 https://console.firebase.google.com/project/angular-14-course-8f284/authentication/users
 
+### Logout the user
+
+https://firebase.google.com/docs/auth/web/password-auth?hl=en&authuser=0
+
+```js
+import { getAuth, signOut } from "firebase/auth";
+
+const auth = getAuth();
+signOut(auth)
+  .then(() => {
+    // Sign-out successful.
+  })
+  .catch((error) => {
+    // An error happened.
+  });
+```
+
 ---
 
 ## Check for Auth in our Angular App
