@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RegisterForm } from 'src/app/types/Auth';
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import { AuthService } from '../auth.service';
 
 @Component({
