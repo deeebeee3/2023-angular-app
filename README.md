@@ -164,3 +164,7 @@ so it can build and include all the tailwind css stuff
 `ng generate module auth`
 `ng generate component auth/login`
 `ng generate component auth/register`
+
+### Angular Forms
+
+https://angular.io/guide/forms-overview
