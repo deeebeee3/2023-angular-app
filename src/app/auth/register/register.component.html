@@ -47,7 +47,7 @@
     <div class="my-5 w-full">
       <label for="confirm_password">Confirm Password</label>
       <input
-        type="text"
+        type="password"
         id="confirm_password"
         class="p-2 rounded w-full border text-sm"
         placeholder="Confirm Password"
@@ -73,8 +73,8 @@
         [disabled]="myForm.form.invalid"
         class="p-2 w-full bg-purple-700 text-white hover:bg-purple-900 rounded"
       >
-        <ng-container *ngIf="isLoading()"> Loading... </ng-container>
-        <ng-container *ngIf="!isLoading()"> Submit </ng-container>
+        <ng-container *ngIf="isLoading"> Loading... </ng-container>
+        <ng-container *ngIf="!isLoading"> Submit </ng-container>
       </button>
     </div>
   </form>

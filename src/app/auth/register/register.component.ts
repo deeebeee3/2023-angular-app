@@ -15,12 +15,17 @@ export class RegisterComponent {
   };
 
   passwordMatched: boolean = true;
+  isLoading: boolean = false;
 
   //constructor(private authService: AuthService) {}
 
   ngOnInit(): void {}
 
   submit() {
+    //console.log(this.form);
+    if (this.isLoading) return;
+    this.isLoading = true;
+
     if (this.form.password !== this.form.confirm_password) {
       this.passwordMatched = false;
       return;
@@ -31,18 +36,15 @@ export class RegisterComponent {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        // ...
         console.log(userCredential);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        // ..
+        alert(errorMessage);
+      })
+      .finally(() => {
+        this.isLoading = false;
       });
-  }
-
-  isLoading() {
-    //return this.authService.isLoading;
-    return false;
   }
 }
